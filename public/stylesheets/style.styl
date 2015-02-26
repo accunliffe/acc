@@ -5,19 +5,36 @@
   background-color white
 div
   &.aboutMe
-    height 50%
+     @media screen and (max-width 500px)
+      height 40%
+      padding 0 !important  
+    height 75%
     text-align left
+  .aboutMeText
+    @media screen and (max-width 500px)
+      height 20%
   &.content
-    height 50%
+    height 75%
     
 img
   max-height 100%
   margin 0px auto 0px auto
   &.hs
-    float left
-    margin 10% 0 0 25%
-    max-height 70%
+    @media screen and (max-width 500px)
+      margin 10% auto 0 auto
+      height 100%
+      
+    margin 15% 0 0 12.5%
+    height 50%
 
 p
   color black
   text-align left
+  &.aboutMe
+    margin 20% auto 20% auto
+    @media screen and (max-width 500px)
+      margin 5% auto 0 auto
+
+h2
+  color black
+  text-align center

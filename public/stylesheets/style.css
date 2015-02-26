@@ -5,23 +5,50 @@
   text-align: center;
   background-color: #fff;
 }
-div.aboutMe {
-  height: 50%;
+@media screen and (max-width: 500px) {
+  div.aboutMe {
+    height: 40%;
+    padding: 0 !important;
+  }
+}
+div height 75% {
   text-align: left;
 }
+@media screen and (max-width: 500px) {
+  div .aboutMeText {
+    height: 20%;
+  }
+}
 div.content {
-  height: 50%;
+  height: 75%;
 }
 img {
   max-height: 100%;
   margin: 0px auto 0px auto;
 }
 img.hs {
-  float: left;
-  margin: 10% 0 0 25%;
-  max-height: 70%;
+  margin: 15% 0 0 12.5%;
+  height: 50%;
+}
+@media screen and (max-width: 500px) {
+  img.hs {
+    margin: 10% auto 0 auto;
+    height: 100%;
+  }
 }
 p {
   color: #000;
   text-align: left;
+}
+p.aboutMe {
+  margin: 20% auto 20% auto;
+}
+@media screen and (max-width: 500px) {
+  p.aboutMe {
+    margin: 5% auto 0 auto;
+  }
+}
+h2 {
+  color: #000;
+  text-align: center;
 }
