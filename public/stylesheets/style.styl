@@ -3,40 +3,54 @@
 .bodyWrapper
   text-align center
   background-color white
+  padding 5px 0 20px 0
 div
-  &.aboutMe
-     @media screen and (max-width 500px)
-      height 40%
+  &.aboutMe    
+    @media screen and (max-width 480px)
+      height 30%
       padding 0 !important  
     height 75%
     text-align left
   .aboutMeText
-    @media screen and (max-width 500px)
+    @media screen and (max-width 480px)
       height 20%
+      margin 0 auto 40px auto
+    @media screen and (max-height 480px) and (orientation: landscape)
+      float left
   &.content
     height 75%
     
+    
+div.secondRow
+  @media screen and (max-height 480px) and (orientation: landscape)
+    display inline-block
+
 img
   max-height 100%
   margin 0px auto 0px auto
   &.hs
-    @media screen and (max-width 500px)
+    @media screen and (max-width 480px)
       margin 10% auto 0 auto
       height 100%
     @media screen and (min-width: 1920px)
       height 35%
       margin 15% 0 0 25%
     margin 15% 0 0 12.5%
-    height 50%
+    height 60%
 
 p
   color black
   text-align left
   &.aboutMe
     margin 20% auto 20% auto
-    @media screen and (max-width 500px)
-      margin 5% auto 0 auto
+    @media screen and (max-width 480px)
+      margin 5% auto 10% auto
+      text-align center
 
 h2
   color black
   text-align center
+  
+.firstRow
+  @media screen and (max-height 480px) and (orientation: landscape)
+    display inline-block

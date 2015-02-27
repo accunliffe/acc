@@ -4,23 +4,36 @@
 .bodyWrapper {
   text-align: center;
   background-color: #fff;
+  padding: 5px 0 20px 0;
 }
-@media screen and (max-width: 500px) {
+div.aboutMe {
+  height: 75%;
+  text-align: left;
+}
+@media screen and (max-width: 480px) {
   div.aboutMe {
-    height: 40%;
+    height: 30%;
     padding: 0 !important;
   }
 }
-div height 75% {
-  text-align: left;
-}
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   div .aboutMeText {
     height: 20%;
+    margin: 0 auto 40px auto;
+  }
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  div .aboutMeText {
+    float: left;
   }
 }
 div.content {
   height: 75%;
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  div.secondRow {
+    display: inline-block;
+  }
 }
 img {
   max-height: 100%;
@@ -28,9 +41,9 @@ img {
 }
 img.hs {
   margin: 15% 0 0 12.5%;
-  height: 50%;
+  height: 60%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   img.hs {
     margin: 10% auto 0 auto;
     height: 100%;
@@ -49,12 +62,18 @@ p {
 p.aboutMe {
   margin: 20% auto 20% auto;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
   p.aboutMe {
-    margin: 5% auto 0 auto;
+    margin: 5% auto 10% auto;
+    text-align: center;
   }
 }
 h2 {
   color: #000;
   text-align: center;
+}
+@media screen and (max-height: 480px) and (orientation: landscape) {
+  .firstRow {
+    display: inline-block;
+  }
 }

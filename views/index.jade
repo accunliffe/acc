@@ -2,27 +2,27 @@ extends layout
 
 block content
   .bodyWrapper
-    .tc-white-1(flex-container='row')
+    .firstRow(flex-container='row', flex-gutter='12')
       div(flex-item='4', flex-item-order='1')
         .aboutMe(class='p+')
           img.hs(src='/images/headshotc1.png')
-      div(flex-item='4', flex-item-order='2')
+      div(flex-item='6', flex-item-order='2')
         .aboutMeText(class='p+')
           p.aboutMe I'm an interaction designer looking to solve real world problems through design.
-      div(flex-item='4', flex-item-order='3')
+    .secondRow(flex-container='row', flex-gutter='12')
+      div.secondRow(flex-item='3', flex-item-order='1')
         .content(class='p+')
           h2 Lendeavor
-          img(src='/images/lendyi1.png')
-    .tc-white-1(flex-container='row')
-      div(flex-item='4', flex-item-order='1')
+          img(src='/images/lendyi1.png')          
+      div.secondRow(flex-item='3', flex-item-order='2')
         .content(class='p+')
           h2 Rand McNally
-          img(src='/images/rmi1.png')
-      div(flex-item='4', flex-item-order='2')
+          img(src='/images/RM1i.png')          
+      div.secondRow(flex-item='3', flex-item-order='3')
         .content(class='p+')
           h2 stockickr
-          img(src='/images/ski1.png')
-      div(flex-item='4', flex-item-order='3')
+          img(src='/images/SKi1.png')
+      div.secondRow(flex-item='3', flex-item-order='4')
         .content(class='p+')
           h2 True Spirit
-          img(src='/images/tsi1.png')
+          img(src='/images/TSi1.png')
